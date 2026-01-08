@@ -11,7 +11,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" index element={<Home />} />
-          <Route path="/waitlist" element={<WaitList />} />
+          {/* <Route path="/waitlist" element={<WaitList />} /> */}
           <Route path="*" element={<Home />} />
         </Routes>
       </Router>
