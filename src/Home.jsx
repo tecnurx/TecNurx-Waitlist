@@ -29,10 +29,10 @@ const Home = () => {
               services.
             </p>
             <div className="hero-btns">
-              <Link to="/waitlist">JOIN THE WAITLIST</Link>
+              <Link to="/waitlist">Join the Waitlist</Link>
             </div>
           </div>
-          <div className="socials">
+          <div className="socials ">
             <a href="mailto:tecnurx@gmail.com" target="_blank">
               <img src={mail} alt="" />
             </a>
@@ -51,6 +51,23 @@ const Home = () => {
           </div>
         </div>
         <img src={hero} alt="Hero Image" className="hero-image" />
+        <div className="socials socials-mobile">
+          <a href="mailto:tecnurx@gmail.com" target="_blank">
+            <img src={mail} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/company/tecnurx/" target="_blank">
+            <img src={link} alt="" />
+          </a>
+          <a href="https://www.instagram.com/tecnurx/" target="_blank">
+            <img src={ig} alt="" />
+          </a>
+          <a href="https://x.com/TecNurx" target="_blank">
+            <img src={x} alt="" />
+          </a>
+          {/* <a href="" target="_blank">
+              <img src={what} alt="" />
+            </a> */}
+        </div>
       </main>
     </div>
   );
