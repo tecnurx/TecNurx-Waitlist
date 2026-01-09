@@ -281,6 +281,23 @@ input::placeholder {
   .navbar {
     padding: 32px 32px;
   }
+  .inputss {
+    flex-direction: column;
+    width: 100%;
+  }
+  .forms {
+    flex: 1;
+  }
+  .card-wrap {
+    width: 100%;
+    padding: 24px;
+  }
+  .line-wrap {
+    gap: 12px;
+  }
+  .wait-wrap {
+    padding: 0 16px;
+  }
 }
 
 @media screen and (min-width: 1500px) {
