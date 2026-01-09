@@ -133,6 +133,66 @@ a {
   display: none;
 }
 
+/* WAITLIST */
+.wait-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+.card-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vh; */
+  background: #ffff;
+  box-shadow: 6px 9px 8.2px 0px #0000000d;
+  padding: 32px;
+  width: 563px;
+  gap: 32px;
+  border-radius: 32px;
+  /* width: 100%; */
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+label {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-size: 14px;
+}
+input {
+  box-shadow: 10px 8px 6px 0px #0000000d;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 16px;
+  width: 100%;
+}
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.inputss{
+  display: flex;
+  width: 100%;
+  gap: 14px;
+}
+button{
+  /* width: 200px; */
+}
+
 @media screen and (max-width: 1290px) {
   .hero-section {
     padding: 42px 100px;
