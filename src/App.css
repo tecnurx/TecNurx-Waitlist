@@ -150,9 +150,9 @@ a {
   flex-direction: column;
   /* height: 100vh; */
   background: #ffff;
-  box-shadow: 6px 9px 8.2px 0px #0000000d;
+  box-shadow: 6px 9px 8.2px px #0000000d;
   padding: 32px;
-  width: 563px;
+  width: 463px;
   gap: 32px;
   border-radius: 32px;
   /* width: 100%; */
@@ -160,17 +160,18 @@ a {
 form {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 14px;
-  width: 100%;
+  /* width: 100%; */
 }
 label {
   font-family: Open Sans;
-  font-weight: 400;
+  font-weight: 500;
   font-style: Regular;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
-  font-size: 14px;
+  font-size: 12px;
 }
 input {
   box-shadow: 10px 8px 6px 0px #0000000d;
@@ -184,13 +185,27 @@ input {
   flex-direction: column;
   gap: 8px;
 }
-.inputss{
+.inputss {
   display: flex;
   width: 100%;
   gap: 14px;
 }
-button{
-  /* width: 200px; */
+button {
+  width: 200px;
+  margin: 0 auto;
+  border: none;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffcc29;
+  padding: 14px;
+  background: #000;
+  font-size: 12px;
+  margin-top: 24px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1290px) {
