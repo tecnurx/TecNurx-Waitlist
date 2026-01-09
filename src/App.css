@@ -143,6 +143,14 @@ a {
   height: 100vh;
   background: #f4f4f4;
 }
+form {
+  width: 100%;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .card-wrap {
   display: flex;
   justify-content: center;
@@ -150,19 +158,20 @@ a {
   flex-direction: column;
   /* height: 100vh; */
   background: #ffff;
-  box-shadow: 6px 9px 8.2px px #0000000d;
+  box-shadow: 6px 9px 8.2px 0px #0000000d;
   padding: 32px;
   width: 463px;
   gap: 32px;
   border-radius: 32px;
   /* width: 100%; */
 }
-form {
+.line {
+  height: 200px;
+}
+.line-wrap {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 14px;
-  /* width: 100%; */
+  gap: 24px;
+  align-items: center;
 }
 label {
   font-family: Open Sans;
@@ -171,13 +180,14 @@ label {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
-  font-size: 12px;
+  font-size: 14px;
 }
 input {
-  box-shadow: 10px 8px 6px 0px #0000000d;
+  box-shadow: 6px 9px 8.2px 0px #0000000d;
+  background: #ffffff;
   border-radius: 8px;
   border: none;
-  padding: 12px 16px;
+  padding: 14px 16px;
   width: 100%;
 }
 .input-wrap {
@@ -204,8 +214,19 @@ button {
   padding: 14px;
   background: #000;
   font-size: 12px;
-  margin-top: 24px;
+  margin-top: 12px;
   cursor: pointer;
+  border-radius: 12px;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+input::placeholder {
+  font-size: 12px;
+  color: #dedede;
 }
 
 @media screen and (max-width: 1290px) {
