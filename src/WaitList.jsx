@@ -67,67 +67,69 @@ const WaitList = () => {
   return (
     <div className="wait-wrap">
       <div className="card-wrap">
-        <img src={logo} alt="Logo" width={120} />
+        {/* <img src={logo} alt="Logo" width={120} /> */}
 
-        <form onSubmit={handleSubmit}>
-          <div className="line-wrap">
-            <img src={line} alt="Decorative line" className="line" />
-            <div className="forms">
-              <div className="inputss">
-                <div className="input-wrap">
-                  <label>First Name</label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    placeholder="Enter your first name"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="input-wrap">
-                  <label>Last Name</label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Enter your last name"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="input-wrap">
-                <label>Phone Number</label>
+        <div className="card">
+          <div className="welcome">
+            <h1>
+              Join the <span>Waitlist</span>
+            </h1>
+          </div>
+          <form onSubmit={handleSubmit} className="form">
+            <div className="two-form-group">
+              <div className="form-group">
+                <label>First Name</label>
                 <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Enter your phone number"
-                  value={formData.phone}
+                  type="text"
+                  name="firstName"
+                  placeholder="Enter your first name"
+                  value={formData.firstName}
                   onChange={handleChange}
                   required
                 />
               </div>
-
-              <div className="input-wrap">
-                <label>Email Address</label>
+              <div className="form-group">
+                <label>Last Name</label>
                 <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email address"
-                  value={formData.email}
+                  type="text"
+                  name="lastName"
+                  placeholder="Enter your last name"
+                  value={formData.lastName}
                   onChange={handleChange}
                   required
                 />
               </div>
             </div>
-          </div>
 
-          <div className="btn">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+            <div className="form-group">
+              <label>Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your phone number"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Email Address</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div className="btn">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
 
       {/* Modal */}

@@ -8,13 +8,24 @@ import link from "./assets/link.svg";
 import ig from "./assets/ig.svg";
 import x from "./assets/x.svg";
 import what from "./assets/what.svg";
+import {
+  FaLinkedin,
+  FaSquareInstagram,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
+import { IoMailSharp } from "react-icons/io5";
+import { ImMail3 } from "react-icons/im";
 
 const Home = () => {
   return (
     <div style={{ height: "100vh", background: "#f4f4f4" }} className="wrap">
-      <nav className="navbar">
-        <img src={logo} alt="" width={120} />
-      </nav>
+      <div className="nav-wrap">
+        <nav className="navbar">
+          <Link to="/">
+            <img src={logo} alt="logo" width={120} />
+          </Link>
+        </nav>
+      </div>
       <main className="hero-section">
         <div className="hero-content">
           <div className="hero-texts">
@@ -32,41 +43,35 @@ const Home = () => {
               <Link to="/waitlist">Join the Waitlist</Link>
             </div>
           </div>
-          <div className="socials ">
+          <div className="socials">
             <a href="mailto:tecnurx@gmail.com" target="_blank">
-              <img src={mail} alt="" />
+             <ImMail3 className="mailicon" />
             </a>
             <a href="https://www.linkedin.com/company/tecnurx/" target="_blank">
-              <img src={link} alt="" />
+              <FaLinkedin />
             </a>
             <a href="https://www.instagram.com/tecnurx/" target="_blank">
-              <img src={ig} alt="" />
+              <FaSquareInstagram />
             </a>
             <a href="https://x.com/TecNurx" target="_blank">
-              <img src={x} alt="" />
+              <FaSquareXTwitter />
             </a>
-            {/* <a href="" target="_blank">
-              <img src={what} alt="" />
-            </a> */}
           </div>
         </div>
         <img src={hero} alt="Hero Image" className="hero-image" />
         <div className="socials socials-mobile">
           <a href="mailto:tecnurx@gmail.com" target="_blank">
-            <img src={mail} alt="" />
+           <ImMail3 className="mailicon" />
           </a>
           <a href="https://www.linkedin.com/company/tecnurx/" target="_blank">
-            <img src={link} alt="" />
+            <FaLinkedin />
           </a>
           <a href="https://www.instagram.com/tecnurx/" target="_blank">
-            <img src={ig} alt="" />
+            <FaSquareInstagram />
           </a>
           <a href="https://x.com/TecNurx" target="_blank">
-            <img src={x} alt="" />
+            <FaSquareXTwitter />
           </a>
-          {/* <a href="" target="_blank">
-              <img src={what} alt="" />
-            </a> */}
         </div>
       </main>
     </div>
