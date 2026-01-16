@@ -3,10 +3,10 @@ import hero from "./assets/hero.svg";
 import rate from "./assets/rate.svg";
 import logo from "./assets/logo.png";
 
-import mail from "./assets/mail.svg";
-import link from "./assets/link.svg";
-import ig from "./assets/ig.svg";
-import x from "./assets/x.svg";
+import mail from "./assets/mail.png";
+import link from "./assets/linkedin.png";
+import ig from "./assets/instagram.png";
+import x from "./assets/twitter.png";
 import what from "./assets/what.svg";
 import {
   FaLinkedin,
@@ -45,32 +45,32 @@ const Home = () => {
           </div>
           <div className="socials">
             <a href="mailto:tecnurx@gmail.com" target="_blank">
-             <ImMail3 className="mailicon" />
+              <img src={mail} alt="" />
             </a>
             <a href="https://www.linkedin.com/company/tecnurx/" target="_blank">
-              <FaLinkedin />
+              <img src={link} alt="" />
             </a>
             <a href="https://www.instagram.com/tecnurx/" target="_blank">
-              <FaSquareInstagram />
+              <img src={ig} alt="" />
             </a>
             <a href="https://x.com/TecNurx" target="_blank">
-              <FaSquareXTwitter />
+              <img src={x} alt="" />
             </a>
           </div>
         </div>
         <img src={hero} alt="Hero Image" className="hero-image" />
         <div className="socials socials-mobile">
           <a href="mailto:tecnurx@gmail.com" target="_blank">
-           <ImMail3 className="mailicon" />
+            <img src={mail} alt="" />
           </a>
           <a href="https://www.linkedin.com/company/tecnurx/" target="_blank">
-            <FaLinkedin />
+            <img src={link} alt="" />
           </a>
           <a href="https://www.instagram.com/tecnurx/" target="_blank">
-            <FaSquareInstagram />
+            <img src={ig} alt="" />
           </a>
           <a href="https://x.com/TecNurx" target="_blank">
-            <FaSquareXTwitter />
+            <img src={x} alt="" />
           </a>
         </div>
       </main>
